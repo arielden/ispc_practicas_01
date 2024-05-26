@@ -64,7 +64,7 @@ while True:
             for dni, datos in agenda.items():
                 print(f"\nDNI: {dni}")
                 for campo, valor in datos.items():
-                    print(f"{campo.capitalize()}: {valor}")
+                    print(f"{campo}: {valor}")
         else:
             print("Agenda vacía")
 
