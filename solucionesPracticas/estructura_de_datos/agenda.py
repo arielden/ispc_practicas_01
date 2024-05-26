@@ -47,17 +47,17 @@ while True:
                 nuevo_valor = input(f"Nuevo valor para {campo} (dejar en blanco para no modificar): ")
                 if nuevo_valor:
                     agenda[dni][campo] = nuevo_valor
-            print("Persona modificada.")
+            print("Persona modificada")
         else:
-            print("DNI no encontrado.")
+            print("DNI no encontrado")
 
     elif opcion == '3':
         dni = input("DNI de la persona a eliminar: ")
         if dni in agenda:
             del agenda[dni]
-            print("Persona eliminada.")
+            print("Se eliminó a la persona")
         else:
-            print("DNI no encontrado.")
+            print("No se encuentra DNI")
 
     elif opcion == '4':
         if agenda:
@@ -66,10 +66,10 @@ while True:
                 for campo, valor in datos.items():
                     print(f"{campo.capitalize()}: {valor}")
         else:
-            print("La agenda está vacía.")
+            print("Agenda vacía")
 
     elif opcion == '5':
         print("Saliendo...")
         break
     else:
-        print("Opción inválida.")
+        print("Opción inválida")
